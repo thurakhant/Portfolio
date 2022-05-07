@@ -5,6 +5,8 @@ module.exports = {
       colors: {
         btnColor: "#F1DDBF",
         cardColor: "#F0F0F0",
+        iconColor: "#525E75",
+        iconAndroidColor: "#92BA92",
       },
     },
   },
