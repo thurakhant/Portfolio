@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .doCard{
+        @apply w-[375px] h-[280px] bg-cardColor rounded-xl;
+    }
+    
+    .expCard{
+        @apply w-[550px] h-[120px] bg-slate-200 rounded-xl;
+    }
+
+    .pjCard{
+        @apply w-[400px] h-[350px] bg-green-100 rounded-xl;
+    }
+}

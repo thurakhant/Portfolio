@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Tailwindcss link -->
+  <link rel="stylesheet" href="/dist/output.css" />
+  <title>Portfolio</title>
+</head>
+
+<body>
+  <!-- Navagation Session -->
+  <div class="max-h-screen">
+    <nav class="fixed flex justify-between bg-white p-6 w-full shadow-md">
+      <div class="flex items-center flex-shrink-0 text-primary ml-[100px]">
+        <svg class="fill-current h-8 w-8 mr-2" xmlns="http://www.w3.org/2000/svg" height="54" viewBox="0 0 24 24"
+          width="54" fill="#000000">
+          <path d="M0 0h24v24H0V0z" fill="none" />
+          <path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0l4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z" />
+        </svg>
+        <span class="font-semibold text-xl tracking-tight">Nova</span>
+      </div>
+      <div class="w-full block flex-grow lg:flex  lg:items-center lg:w-auto">
+        <div class="text-sm lg:flex-grow">
+          <a href="#home" class="block mt-4 lg:inline-block lg:mt-0 text-primary hover:text-change pl-[100px]">
+            Home
+          </a>
+          <a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-primary hover:text-change pl-[100px]">
+            Projects
+          </a>
+          <a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-primary hover:text-change pl-[100px]">
+            Experience
+          </a>
+          <a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-primary hover:text-change pl-[100px]">
+            Contact
+          </a>
+        </div>
+        <div class="w-full block lg:flex lg:items-end lg:w-auto">
+          <!-- Contact -->
+          <button class="block mt-4 lg:inline-block lg:mt-0 text-black hover:text-change">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
+              <path d="M0 0h24v24H0V0z" fill="none" />
+              <path
+                d="M6.54 5c.06.89.21 1.76.45 2.59l-1.2 1.2c-.41-1.2-.67-2.47-.76-3.79h1.51m9.86 12.02c.85.24 1.72.39 2.6.45v1.49c-1.32-.09-2.59-.35-3.8-.75l1.2-1.19M7.5 3H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.49c0-.55-.45-1-1-1-1.24 0-2.45-.2-3.57-.57-.1-.04-.21-.05-.31-.05-.26 0-.51.1-.71.29l-2.2 2.2c-2.83-1.45-5.15-3.76-6.59-6.59l2.2-2.2c.28-.28.36-.67.25-1.02C8.7 6.45 8.5 5.25 8.5 4c0-.55-.45-1-1-1z" />
+            </svg>
+          </button>
+          <!-- Mail -->
+          <button class="block mt-4 lg:inline-block lg:mt-0 text-black hover:text-change pl-[50px] pr-[50px]">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
+              <path d="M0 0h24v24H0V0z" fill="none" />
+              <path
+                d="M22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6zm-2 0l-8 5-8-5h16zm0 12H4V8l8 5 8-5v10z" />
+            </svg>
+          </button>
+          <!-- CV Session -->
+          <button class="block mt-4 lg:inline-block lg:mt-0 text-black hover:text-change mr-4">
+            <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24"
+              width="24px" fill="#000000">
+              <g>
+                <rect fill="none" height="24" width="24" />
+              </g>
+              <g>
+                <path
+                  d="M18,15v3H6v-3H4v3c0,1.1,0.9,2,2,2h12c1.1,0,2-0.9,2-2v-3H18z M17,11l-1.41-1.41L13,12.17V4h-2v8.17L8.41,9.59L7,11l5,5 L17,11z" />
+              </g>
+            </svg>
+
+          </button>
+
+        </div>
+    </nav>
+
+  </div>
+  <main>
+    <!-- Home Section -->
+    <section id="home">
+      <div class="container mx-auto flex flex-row h-screen">
+        <div class="flex flex-1 justify-center items-center ">
+          <div class="flex flex-col">
+            <h1 class="text-4xl text-black font-bold">
+              I'M Thura Khant Thein
+            </h1>
+            <p class="leading-normal text-black mt-[15px]">
+              I'm A Creative Web, UI/ UX Designer, Android Developer
+              <br />
+              And Self Learner.
+            </p>
+            <div class="w-[200px] h-[50px] mt-[30px]">
+              <a href="#"
+                class="bg-btnColor py-2 px-4 text-black rounded-md hover:text-btncolor transition-colors duration-200 delay-100">
+                Download Resume
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-1 justify-center   items-center">
+          <img src="/assets/images/cover.png" alt="" />
+        </div>
+      </div>
+    </section>
+    <!-- Social Media Bar -->
+    <div class="container mx-auto flex flex-row items-center">
+       <div class="flex flex-2 h-1 w-full bg-black "></div>
+       <div class="flex flex-1">
+          <button>
+            <?xml version="1.0"?><svg fill="#000000" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 30 30" width="30px" height="30px">    <path d="M15,3C8.373,3,3,8.373,3,15c0,6.016,4.432,10.984,10.206,11.852V18.18h-2.969v-3.154h2.969v-2.099c0-3.475,1.693-5,4.581-5 c1.383,0,2.115,0.103,2.461,0.149v2.753h-1.97c-1.226,0-1.654,1.163-1.654,2.473v1.724h3.593L19.73,18.18h-3.106v8.697 C22.481,26.083,27,21.075,27,15C27,8.373,21.627,3,15,3z"/></svg>
+          </button>
+       </div>
+       <div class="flex flex-1">
+          <button>
+            <?xml version="1.0"?><svg fill="#000000" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 30 30" width="30px" height="30px">    <path d="M15,3C8.373,3,3,8.373,3,15c0,6.016,4.432,10.984,10.206,11.852V18.18h-2.969v-3.154h2.969v-2.099c0-3.475,1.693-5,4.581-5 c1.383,0,2.115,0.103,2.461,0.149v2.753h-1.97c-1.226,0-1.654,1.163-1.654,2.473v1.724h3.593L19.73,18.18h-3.106v8.697 C22.481,26.083,27,21.075,27,15C27,8.373,21.627,3,15,3z"/></svg>
+          </button>
+       </div>
+       <div class="flex flex-1">
+          <button>
+            <?xml version="1.0"?><svg fill="#000000" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 30 30" width="30px" height="30px">    <path d="M15,3C8.373,3,3,8.373,3,15c0,6.016,4.432,10.984,10.206,11.852V18.18h-2.969v-3.154h2.969v-2.099c0-3.475,1.693-5,4.581-5 c1.383,0,2.115,0.103,2.461,0.149v2.753h-1.97c-1.226,0-1.654,1.163-1.654,2.473v1.724h3.593L19.73,18.18h-3.106v8.697 C22.481,26.083,27,21.075,27,15C27,8.373,21.627,3,15,3z"/></svg>
+          </button>
+       </div>
+       <div class="flex flex-1">
+          <button>
+            <?xml version="1.0"?><svg fill="#000000" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 30 30" width="30px" height="30px">    <path d="M15,3C8.373,3,3,8.373,3,15c0,6.016,4.432,10.984,10.206,11.852V18.18h-2.969v-3.154h2.969v-2.099c0-3.475,1.693-5,4.581-5 c1.383,0,2.115,0.103,2.461,0.149v2.753h-1.97c-1.226,0-1.654,1.163-1.654,2.473v1.724h3.593L19.73,18.18h-3.106v8.697 C22.481,26.083,27,21.075,27,15C27,8.373,21.627,3,15,3z"/></svg>
+          </button>
+       </div>
+        <div class="flex flex-2 h-1 w-full bg-black "></div>
+    </div>
+
+    <!-- Do and Experience Session -->
+    <section id="doExp">
+      <div class="container mx-auto min-h-fit">
+        <div class="flex flex-col items-center">
+          <div class="mt-[50px] font-bold">WHAT I DO?</div>
+          <div class="mt-[25px] font-semibold">What Kind Of Work You Want Me To Do For You</div>
+          <!-- Card -->
+          <div class="grid grid-cols-3 gap-16 mt-[75px]">
+            <div class="doCard">
+              
+            </div>
+            <div class="doCard"></div>
+            <div class="doCard"></div>
+          </div>
+
+
+          <!-- Experience -->
+          <div class="mt-[85px] font-semibold">Experience</div>
+          <div class="flex flex-row w-full mt-[50px] ">
+            <div class="flex flex-1">
+              <div class="grid grid-flow-cols-3 gap-y-4">
+                <div class="expCard"></div>
+                <div class="expCard"></div>
+                <div class="expCard"></div>
+              </div>
+            </div>
+            <div class="flex flex-1 justify-center bg-cyan-50 rounded-xl"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container mx-auto mt-[80px]">
+        <div class="text-center">My Projects</div>
+        <div class="text-center mt-[25px] mb-[60px]">All The Projects I Have Established A and Involved In My Career
+        </div>
+        <div class="grid grid-rows-2 grid-flow-col gap-[35px] gap-y-[50px]">
+          <div class="pjCard">1</div>
+          <div  class="pjCard">2</div>
+          <div  class="pjCard">3</div>
+          <div  class="pjCard">4</div>
+          <div  class="pjCard">5</div>
+          <div  class="pjCard">6</div>
+        </div>
+      </div>
+      </div>
+    </section>
+    <div class="w-full h-1 bg-black mt-[100px]"></div>
+  </main>
+
+
+
+  <footer></footer>
+</body>
+
+</html>
