@@ -13,7 +13,7 @@
 
 <body>
   <!-- Navagation Session -->
-  <div class="">
+  <div class="flex flex-col h-screen">
     <nav class="flex justify-between bg-white p-6 w-full shadow-md">
       <div class="flex items-center flex-shrink-0 text-primary ml-[100px]">
         <svg class="fill-current h-8 w-8 mr-2" xmlns="http://www.w3.org/2000/svg" height="54" viewBox="0 0 24 24"
@@ -72,10 +72,10 @@
 
         </div>
     </nav>
-     <section id="home">
-      <div class=" flex min-h-screen bg-slate-800">
+     <!-- Home Section -->
+      <div class="container mx-auto flex flex-grow">
         <div class="flex flex-1 justify-center items-center">
-          <div class="flex flex-col justify-center bg-cyan-100 w-full h-full">
+          <div class="flex flex-col justify-center w-full h-full">
             <h1 class="text-4xl text-black font-bold">
               I'M Thura Khant Thein
             </h1>
@@ -98,12 +98,7 @@
         </div>
 
       </div>
-
-    </section>
-  </div>
-  
-    <!-- Home Section -->
-    
+  </div>  
     <!-- Social Media Bar -->
     <section>
       <div class="container mx-auto flex flex-row items-center">
@@ -150,9 +145,9 @@
 
     <!-- Do Session -->
     <section id="doExp">
-      <div class="container mx-auto  ">
-        <div class="flex flex-col items-center">
-          <div class="mt-[50px] font-bold text-[24px]">WHAT I DO?</div>
+      <div class="container mx-auto h-screen flex items-center">
+        <div class="flex flex-col items-center justify-end">
+          <div class="font-bold text-[24px]">WHAT I DO?</div>
           <div class="mt-[25px] font-semibold text-[18px]">What Kind Of Work You Want Me To Do For You</div>
           <!-- Card -->
           <div class="do-session-layout">
@@ -276,8 +271,15 @@
           </div>
 
 
-          <!-- Experience -->
-          <div class="mt-[85px] font-semibold text-[24px]">Experience</div>
+          
+          
+        </div>
+      </div>
+    </section>
+    <!-- Experience Session-->
+    <div class="container mx-auto">
+      <div class="flex flex-col items-center">
+        <div class="mt-[85px] font-semibold text-[24px]">Experience</div>
           <div class="flex flex-row w-full mt-[50px] ">
             <div class="flex flex-1">
               <div class="grid grid-flow-cols-3 gap-y-4">
@@ -381,10 +383,11 @@
             </div>
             <div class="flex flex-1 justify-center bg-cyan-50 rounded-xl shadow-xl"></div>
           </div>
-        </div>
       </div>
-    </section>
-    <!-- Experience Session-->
+      
+    </div>
+    
+
     <section>
       <div class="container mx-auto mt-[80px]">
         <div class="text-center">My Projects</div>
