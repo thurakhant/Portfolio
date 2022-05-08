@@ -14,9 +14,10 @@
     .do-card-grid{
         @apply flex flex-col h-full items-center justify-evenly;
     }
-    
-    .expCard{
-        @apply w-[550px] h-[120px] bg-slate-200 rounded-xl shadow-xl;
+
+
+    .exp-card{
+        @apply w-[550px] h-[120px] bg-cardColor rounded-xl shadow-xl;
     }
 
     .pjCard{
