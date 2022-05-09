@@ -15,13 +15,16 @@
         @apply flex flex-col h-full items-center justify-evenly;
     }
 
-
     .exp-card{
         @apply w-[550px] h-[120px] bg-cardColor rounded-xl shadow-xl;
     }
 
-    .pjCard{
-        @apply w-[400px] h-[350px] bg-green-100 rounded-xl shadow-lg;
+    .pj-grid{
+        @apply grid grid-rows-2 grid-flow-col gap-[35px] gap-y-[50px];
+    }
+
+    .pj-card{
+        @apply w-[300px] h-[280px] rounded-xl shadow-2xl bg-cover  ;
     }
 
     .doBtn{
