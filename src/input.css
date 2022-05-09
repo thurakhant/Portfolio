@@ -4,11 +4,11 @@
 
 @layer components {
     .do-session-layout{
-        @apply grid grid-cols-3 gap-16 mt-[75px];
+        @apply grid grid-cols-3 gap-16;
     }
 
     .do-card{
-        @apply w-[375px] h-[280px] bg-cardColor rounded-xl shadow-xl;
+        @apply w-[375px] h-[280px] bg-cardColor rounded-xl shadow-lg;
     }
 
     .do-card-grid{
