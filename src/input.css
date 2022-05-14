@@ -3,37 +3,74 @@
 @tailwind utilities;
 
 @layer components {
-    .do-session-layout{
-        @apply grid grid-cols-3 gap-16;
+
+    /* Layout Components */
+
+        .do-session-layout{
+            @apply grid grid-cols-3 gap-16;
+        }
+
+        .contact-session-layout{
+            @apply container mx-5 w-full h-[300px]
+        }
+
+    /* Grid Components */
+
+        .do-card-grid {
+            @apply flex flex-col h-full items-center justify-evenly;
+        }
+
+        .pj-grid{
+            @apply grid grid-rows-2 grid-flow-col gap-[35px] gap-y-[50px];
+        }
+
+        .contact-grid{
+            @apply flex flex-row w-full h-full
+        }
+
+    /* Card Components */
+
+        .do-card{
+            @apply w-[375px] h-[280px] bg-secondary rounded-xl shadow-lg;
+        }
+
+        .exp-card{
+            @apply w-[550px] h-[120px] bg-secondary rounded-xl shadow-xl;
+        }
+
+        .pj-card{
+            @apply w-[300px] h-[280px] rounded-xl shadow-2xl bg-cover  ;
     }
 
-    .do-card{
-        @apply w-[375px] h-[280px] bg-cardColor rounded-xl shadow-lg;
-    }
+    /* Button Components */
 
-    .do-card-grid{
-        @apply flex flex-col h-full items-center justify-evenly;
-    }
+        .downBtn{
+            @apply w-[190px] h-[50px];
+        }
 
-    .exp-card{
-        @apply w-[550px] h-[120px] bg-cardColor rounded-xl shadow-xl;
-    }
+        .downStyle{
+            @apply bg-btnColor py-2 px-4 text-primary rounded-md hover:text-iconColor transition-colors duration-200 delay-100 shadow-xl
+        }
 
-    .pj-grid{
-        @apply grid grid-rows-2 grid-flow-col gap-[35px] gap-y-[50px];
-    }
+        .mail-btn{
+            @apply w-[190px] h-[50px];
+        }
 
-    .pj-card{
-        @apply w-[300px] h-[280px] rounded-xl shadow-2xl bg-cover  ;
-    }
+        .mail-style {
+            @apply bg-primary py-2 px-4 text-white rounded-md hover:transition-colors duration-200 delay-100 shadow-xl
+        }
+    
 
-    .doBtn{
-        @apply w-[120px] h-[50px] text-[16px];
-    }
-    .downBtn{
-        @apply w-[190px] h-[50px];
-    }
-    .downStyle{
-        @apply bg-btnColor py-2 px-4 text-black rounded-md hover:text-iconColor transition-colors duration-200 delay-100 shadow-xl
-    }
+    
+
+    
+
+    
+
+    
+    
+    
+
+    
+    
 }
