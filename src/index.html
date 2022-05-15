@@ -7,98 +7,123 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <!-- Tailwindcss link -->
   <link rel="stylesheet" href="/dist/output.css" />
+  <link rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/atom-one-dark.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/highlight.min.js"></script>
+
 
   <title>Portfolio</title>
 </head>
 
 <body>
-  <!-- Navagation Session -->
-  <div class="flex flex-col h-screen">
-    <nav class="flex justify-between bg-white p-6 w-full shadow-md">
-      <div class="flex items-center flex-shrink-0 text-primary ml-[100px]">
-        <svg class="fill-current h-8 w-8 mr-2" xmlns="http://www.w3.org/2000/svg" height="54" viewBox="0 0 24 24"
-          width="54" fill="#000000">
-          <path d="M0 0h24v24H0V0z" fill="none" />
-          <path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0l4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z" />
-        </svg>
-        <span class="font-semibold text-xl tracking-tight">Nova</span>
+  <!-- Navagation Session --> <!-- Home Section -->
+  <section>
+    <div class="w-full h-screen bg-gradient-to-r  flex justify-center items-center overflow-hidden">
+    
+     <!-- Front -->
+
+    <div class="relative w-1/2 flex justify-center items-center">
+      <div class="relative z-10 bg-terminal rounded-lg h-96 w-terminal custom-shadow">
+        <div class="flex items-center">
+          <div class="flex items-center space-x-2 p-3">
+            <div class="bg-red-500 rounded-full w-3 h-3"></div>
+            <div class="bg-yellow-500 rounded-full w-3 h-3"></div>
+            <div class="bg-green-500 rounded-full w-3 h-3"></div>
+          </div>
+            <h1 class="text-blue-500 font-light">protfolio.py</h1>
+        </div>
+        <pre class="p-0 h-96 overflow-hidden rounded-lg">
+          <code class="bg-gray-800 p-0">
+            def details(name):
+
+              print("I am" + name)
+
+            details("Thura Khant Thein")
+          </code>
+        </pre>
       </div>
-      <div class="w-full block flex-grow lg:flex  lg:items-center lg:w-auto">
-        <div class="text-sm lg:flex-grow">
-          <a href="#home" class="block mt-4 lg:inline-block lg:mt-0 text-primary hover:text-change pl-[100px]">
-            Home
-          </a>
-          <a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-primary hover:text-change pl-[100px]">
-            Projects
-          </a>
-          <a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-primary hover:text-change pl-[100px]">
-            Experience
-          </a>
-          <a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-primary hover:text-change pl-[100px]">
-            Contact
-          </a>
-        </div>
-        <div class="w-full block lg:flex lg:items-end lg:w-auto">
-          <!-- Contact -->
-          <button class="block mt-4 lg:inline-block lg:mt-0 text-black hover:text-change">
-            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
-              <path d="M0 0h24v24H0V0z" fill="none" />
-              <path
-                d="M6.54 5c.06.89.21 1.76.45 2.59l-1.2 1.2c-.41-1.2-.67-2.47-.76-3.79h1.51m9.86 12.02c.85.24 1.72.39 2.6.45v1.49c-1.32-.09-2.59-.35-3.8-.75l1.2-1.19M7.5 3H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.49c0-.55-.45-1-1-1-1.24 0-2.45-.2-3.57-.57-.1-.04-.21-.05-.31-.05-.26 0-.51.1-.71.29l-2.2 2.2c-2.83-1.45-5.15-3.76-6.59-6.59l2.2-2.2c.28-.28.36-.67.25-1.02C8.7 6.45 8.5 5.25 8.5 4c0-.55-.45-1-1-1z" />
-            </svg>
-          </button>
-          <!-- Mail -->
-          <button class="block mt-4 lg:inline-block lg:mt-0 text-black hover:text-change pl-[50px] pr-[50px]">
-            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
-              <path d="M0 0h24v24H0V0z" fill="none" />
-              <path
-                d="M22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6zm-2 0l-8 5-8-5h16zm0 12H4V8l8 5 8-5v10z" />
-            </svg>
-          </button>
-          <!-- CV Session -->
-          <button class="block mt-4 lg:inline-block lg:mt-0 text-black hover:text-change mr-4">
-            <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24"
-              width="24px" fill="#000000">
-              <g>
-                <rect fill="none" height="24" width="24" />
-              </g>
-              <g>
-                <path
-                  d="M18,15v3H6v-3H4v3c0,1.1,0.9,2,2,2h12c1.1,0,2-0.9,2-2v-3H18z M17,11l-1.41-1.41L13,12.17V4h-2v8.17L8.41,9.59L7,11l5,5 L17,11z" />
-              </g>
-            </svg>
 
-          </button>
+      <!-- Back -->
+
+    <div class="absolute z-0 bg-terminal rounded-lg h-96 w-terminal transform rotate-6 translate-x-1 -translate-y-8 opacity-75">
+        <div class="flex items-center">
+          <div class="flex items-center space-x-2 p-3">
+            <div class="bg-red-500 rounded-full w-3 h-3"></div>
+            <div class="bg-yellow-500 rounded-full w-3 h-3"></div>
+            <div class="bg-green-500 rounded-full w-3 h-3"></div>
+          </div>
+        </div>
+    </div>
+
+    </div>
+
+    <!-- Right -->
+
+    <div class="w-1/2 flex justify-center items-center">
+      
+      <img class="w-80 h-80 rounded-full border-4 border-dashed border-primary custom-shadow" src="/assets/images/avatar.jpg" alt="">
+      
+      <!-- Inner -->
+
+      <div 
+        class="hw-inner flex justify-between items-center absolute border-8 border-dotted  rounded-full animate-spin-slow anim-8s">
+
+        <div class="bg-white rounded-full custom-shadow h-10 w-10 p-1 transform -translate-x-5 ">
+          <img class="w-9 h-9 object-center animate-rotate-img anim-8s" src="/assets/language/flutter.svg" 
+          alt="">
+        </div>
+
+        <div class="bg-white overflow-hidden rounded-full custom-shadow h-10 w-10 p-1 transform translate-x-5 ">
+          <img class="w-10 h-10 object-center animate-rotate-img anim-8s" src="/assets/language/dart.svg" 
+          alt="">
 
         </div>
-    </nav>
-    <!-- Home Section -->
-    <div class="container mx-auto flex flex-grow">
-      <div class="flex flex-1 justify-center items-center">
-        <div class="flex flex-col justify-center w-full h-full">
-          <h1 class="text-4xl text-black font-bold">
-            I'M Thura Khant Thein
-          </h1>
-          <p class="leading-normal text-black mt-[15px]">
-            I'm A Creative Web, UI/ UX Designer, Android Developer
-            <br />
-            And Self Learner.
-          </p>
-          <div class="downBtn mt-[30px]">
-            <a href="#" class="downStyle">
-              Download Resume
-            </a>
+      </div>
+
+      <!-- Outer -->
+
+      <div 
+        class="hw-outer flex justify-between items-center absolute border-8 border-dashed border-primary rounded-full animate-spin-slow ">
+
+          <div class="flex justify-between items-center h-full w-full">
+
+          
+        <div class="bg-white rounded-full custom-shadow h-10 w-10 p-1 transform translate-x-8 translate-y-40">
+          <img class="w-full h-full object-center animate-rotate-img " src="/assets/language/firebase.svg" 
+          alt="">
+        </div>
+
+        <div class="bg-white overflow-hidden rounded-full custom-shadow h-10 w-10 p-1 transform -translate-x-8 -translate-y-40 ">
+          <img class="w-full h-full object-center animate-rotate-img " src="/assets/language/java.svg" 
+          alt="">
+
+        </div>
           </div>
 
+           <div class="absolute flex justify-between items-center h-full w-full">
+
+          
+        <div class=" bg-white rounded-full custom-shadow h-10 w-10 p-1 transform translate-x-8 -translate-y-40">
+          <img class="w-full h-full object-center animate-rotate-img " src="/assets/language/tailwindcss.svg" 
+          alt="">
         </div>
 
-      </div>
-      <div class="flex flex-1 justify-center items-center">
-        <img src="/assets/images/cover.png" alt="" />
+        <div class="bg-white overflow-hidden rounded-full custom-shadow h-10 w-10 p-1 transform -translate-x-8 translate-y-40 ">
+          <img class="w-full h-full object-center animate-rotate-img " src="/assets/language/database.svg" 
+          alt="">
+
+        </div>
+          </div>
       </div>
 
     </div>
+    
+
+    
   </div>
+
+  
+  </section>
   <!-- Social Media Bar -->
   <section>
     <div class="container mx-auto flex flex-row items-center h-[7px]">
@@ -160,7 +185,7 @@
             <div class="do-card">
               <div class="do-card-grid">
                 <div class="fill-iconColor">
-                  <svg id="Layer_1" enable-background="new 0 0 52 52" height="50" viewBox="0 0 52 52" width="50"
+                  <svg class="animate-bounce" id="Layer_1" enable-background="new 0 0 52 52" height="50" viewBox="0 0 52 52" width="50"
                     xmlns="http://www.w3.org/2000/svg">
                     <g id="_x36_3">
                       <g>
@@ -443,18 +468,23 @@
         <div class="flex flex-col justify-evenly  h-full">
           <div class="text-[24px] font-bold text-primary">GET IN TOUCH</div>
           <p class="text-[14px] text-primary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, voluptates molestiae quasi commodi voluptatem ex qui praesentium saepe unde dolorem non, nisi reiciendis maxime excepturi esse accusamus at possimus id?</p>
-          <div class="mail-btn mt-[5px]">
+          <div class=" mail-btn mt-[5px]">
             <a href="mailto:thurakhant@gmail.com" class="mail-style">
               Send Mail
             </a>
           </div>
+          <div>
+            
+          </div>
         </div>
-        <div class="flex w-full h-full items-center">
-        <div class="flex flex-col h-[200px] justify-evenly">
-          <div class="text-[24px] font-bold text-primary">Contact</div>
+        <div class="flex w-full h-full items-center ">
+        <div class="flex  h-[200px]  justify-center w-full ">
+          <div class="flex flex-col justify-evenly h-full">
+            <div class="text-[24px] font-bold text-primary ">Contact</div>
           <div class="text-[14px] text-primary">Linkedin - <a href="">thurakhant</a></div>
           <div class="text-[14px] text-primary">Phone Number - (+959)972090952</div> 
           <div class="text-[14px] text-primary">Github - <a href="">thurakhant</a></div>
+          </div>
         </div>
       </div>
       </div>
@@ -466,6 +496,12 @@
       Copyright Thura Khant Thein
     </div>
   </footer>
+
+
+
+
+
+  <script>hljs.highlightAll();</script>
 </body>
 
 </html>

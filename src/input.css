@@ -3,74 +3,86 @@
 @tailwind utilities;
 
 @layer components {
+  /* Layout Components */
 
-    /* Layout Components */
+  .do-session-layout {
+    @apply grid grid-cols-3 gap-16;
+  }
 
-        .do-session-layout{
-            @apply grid grid-cols-3 gap-16;
-        }
+  .contact-session-layout {
+    @apply container mx-5 w-full h-[300px];
+  }
 
-        .contact-session-layout{
-            @apply container mx-5 w-full h-[300px]
-        }
+  /* Grid Components */
 
-    /* Grid Components */
+  .do-card-grid {
+    @apply flex flex-col h-full items-center justify-evenly;
+  }
 
-        .do-card-grid {
-            @apply flex flex-col h-full items-center justify-evenly;
-        }
+  .pj-grid {
+    @apply grid grid-rows-2 grid-flow-col gap-[35px] gap-y-[50px];
+  }
 
-        .pj-grid{
-            @apply grid grid-rows-2 grid-flow-col gap-[35px] gap-y-[50px];
-        }
+  .contact-grid {
+    @apply flex flex-row w-full h-full;
+  }
 
-        .contact-grid{
-            @apply flex flex-row w-full h-full
-        }
+  /* Card Components */
 
-    /* Card Components */
+  .do-card {
+    @apply w-[375px] h-[280px] bg-secondary rounded-xl shadow-lg;
+  }
 
-        .do-card{
-            @apply w-[375px] h-[280px] bg-secondary rounded-xl shadow-lg;
-        }
+  .exp-card {
+    @apply w-[550px] h-[120px] bg-secondary rounded-xl shadow-xl hover:animate-pulse;
+  }
 
-        .exp-card{
-            @apply w-[550px] h-[120px] bg-secondary rounded-xl shadow-xl;
-        }
+  .pj-card {
+    @apply w-[300px] h-[280px] rounded-xl shadow-2xl bg-cover;
+  }
 
-        .pj-card{
-            @apply w-[300px] h-[280px] rounded-xl shadow-2xl bg-cover  ;
-    }
+  /* Button Components */
 
-    /* Button Components */
+  .downBtn {
+    @apply w-[150px] h-[40px] animate-bounce shadow-xl bg-btnColor rounded-md hover:bg-primary;
+  }
 
-        .downBtn{
-            @apply w-[190px] h-[50px];
-        }
+  .downStyle {
+    @apply text-sm text-white  transition-colors duration-200 delay-100;
+  }
 
-        .downStyle{
-            @apply bg-btnColor py-2 px-4 text-primary rounded-md hover:text-iconColor transition-colors duration-200 delay-100 shadow-xl
-        }
+  .mail-btn {
+    @apply animate-bounce w-[200px] h-[50px];
+  }
 
-        .mail-btn{
-            @apply w-[190px] h-[50px];
-        }
+  .mail-style {
+    @apply bg-primary py-2 px-4 text-white rounded-md hover:transition-colors duration-200 delay-100 shadow-xl;
+  }
 
-        .mail-style {
-            @apply bg-primary py-2 px-4 text-white rounded-md hover:transition-colors duration-200 delay-100 shadow-xl
-        }
-    
+  .custom-shadow {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  }
 
-    
+  .w-terminal {
+    width: 36rem;
+  }
 
-    
+  pre,
+  code {
+    padding: 0px !important;
+  }
 
-    
+  .hw-inner {
+    width: 28rem;
+    height: 28rem;
+  }
 
-    
-    
-    
+  .hw-outer {
+    width: 36rem;
+    height: 36rem;
+  }
 
-    
-    
+  .anim-8s {
+    animation-duration: 8s !important;
+  }
 }
