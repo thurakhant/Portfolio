@@ -18,11 +18,15 @@
 <body>
   <!-- Navagation Session --> <!-- Home Section -->
   <section>
-    <div class="w-full h-screen bg-gradient-to-r  flex justify-center items-center overflow-hidden">
+    <div class="w-full h-screen bg-gradient-to-r overflow-hidden flex flex-col-reverse md:flex-row justify-center items-center ">
     
-     <!-- Front -->
+      <!-- Nav  -->
 
-    <div class="relative w-1/2 flex justify-center items-center">
+      
+
+     <!-- Left -->
+
+    <div class="relative w-full md:w-1/2 mt-20 md:mt-0 flex justify-center items-center transform scale-75 md:scale-100">
       <div class="relative z-10 bg-terminal rounded-lg h-96 w-terminal custom-shadow">
         <div class="flex items-center">
           <div class="flex items-center space-x-2 p-3">
@@ -59,33 +63,35 @@
 
     <!-- Right -->
 
-    <div class="w-1/2 flex justify-center items-center">
-      
-      <img class="w-80 h-80 rounded-full border-4 border-dashed border-primary custom-shadow" src="/assets/images/avatar.jpg" alt="">
-      
+    <div class="w-full md:w-1/2 flex justify-center items-center transform scale-75 md:scale-125 translate-x-20 md:translate-x-48 translate-y-0 md:translate-y-20">  
+        
+
+        <img class="w-80 h-80 rounded-full border-4 border-dashed border-primary custom-shadow" src="/assets/images/avatar.jpg" alt="">
+        
       <!-- Inner -->
 
       <div 
-        class="hw-inner flex justify-between items-center absolute border-8 border-dotted  rounded-full animate-spin-slow anim-8s">
+        class="hw-inner flex justify-between items-center absolute border-8 border-dotted  rounded-full animate-spin-slow anim-8s ">
 
-        <div class="bg-white rounded-full custom-shadow h-10 w-10 p-1 transform -translate-x-5 ">
+      <div class="bg-white rounded-full custom-shadow h-10 w-10 p-1 transform -translate-x-5 ">
           <img class="w-9 h-9 object-center animate-rotate-img anim-8s" src="/assets/language/flutter.svg" 
           alt="">
-        </div>
+          </div>
 
-        <div class="bg-white overflow-hidden rounded-full custom-shadow h-10 w-10 p-1 transform translate-x-5 ">
+        <div class="bg-white overflow-hidden rounded-full custom-shadow h-10 w-10  transform translate-x-5 ">
           <img class="w-10 h-10 object-center animate-rotate-img anim-8s" src="/assets/language/dart.svg" 
           alt="">
 
         </div>
+        
       </div>
 
       <!-- Outer -->
 
       <div 
-        class="hw-outer flex justify-between items-center absolute border-8 border-dashed border-primary rounded-full animate-spin-slow ">
+        class="hw-outer flex justify-between items-center absolute border-4 border-dashed border-primary rounded-full animate-spin-slow">
 
-          <div class="flex justify-between items-center h-full w-full">
+          <div class="flex justify-between items-center h-full w-full ">
 
           
         <div class="bg-white rounded-full custom-shadow h-10 w-10 p-1 transform translate-x-8 translate-y-40">
